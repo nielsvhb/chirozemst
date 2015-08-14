@@ -1,0 +1,34 @@
+.footer {
+    background-color: #ee6e73;
+    height: 80px;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+.hover_class {
+    padding: 8px;
+}
+
+.hover_class a {
+    visibility:hidden;
+    position: absolute;
+}
+
+.hover_class:hover a {
+    visibility:visible;
+}
+.icon-delete {
+    margin-left: 6px;
+    color:#ee6e73 !important;
+}
+
+.event-create {
+    border: 3px solid #26a69a;
+}
+nav a:hover {
+    text-decoration: none;
+    color: white;
+}
