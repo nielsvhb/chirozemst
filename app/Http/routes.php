@@ -27,3 +27,5 @@ Route::get('logout', ['as' => 'logout', 'uses' => 'LoginController@logout']);
 Route::post('kalender', ['as' => 'kalender', 'uses' => 'CalendarController@create']);
 Route::get('kalender/{event}', ['as' => 'event.delete', 'uses' => 'CalendarController@delete']);
 
+//Home post routes
+Route::post('/', ['as' => 'home', 'uses' => 'HomeController@create']);

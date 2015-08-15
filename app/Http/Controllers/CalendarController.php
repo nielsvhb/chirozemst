@@ -6,6 +6,7 @@ use App\Events\EventCreator;
 use App\Events\EventRepository;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Session;
 
 class CalendarController extends Controller
 {
@@ -22,12 +23,16 @@ class CalendarController extends Controller
 		$eventCreator->create($data);
 		$eventsByDate = $this->events->findAllByDate();
 
+		Session::put('success', 'Nieuw evenement aangemaakt.');
+
 		return view('kalender', compact('eventsByDate'));
 	}
 
 	public function delete(Event $event)
 	{
 		$this->events->delete($event);
+
+		Session::put('success', 'Evenement "'.$event->title. '" verwijderd.');
 
 		return redirect()->back();
 	}

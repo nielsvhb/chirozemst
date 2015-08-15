@@ -12,16 +12,15 @@
 
     </head>
 
-    <body>
-        @include('nav')
+    <body class="grey lighten-3">
+        @include('partials._nav')
         @yield('content')
-        @include('footer')
+        @include('partials._footer')
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="{{ asset('js/materialize.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
-
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.modal-trigger').leanModal();
@@ -40,8 +39,10 @@
                     weekdaysShort: ['zon', 'maa', 'din', 'woe', 'don', 'vrij', 'zat']
                 });
 
-            });
+                $('.slider').slider({full_width: true, height: 550});
 
+            });
         </script>
+        @include('partials._flash_messages')
     </body>
 </html>
