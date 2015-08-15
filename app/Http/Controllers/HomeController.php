@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Events\EventRepository;
 use App\Http\Requests;
+use App\Posts\Post;
 use App\Posts\PostCreator;
 use App\Posts\PostRepository;
 use Illuminate\Support\Facades\Input;
@@ -56,5 +57,13 @@ class HomeController extends Controller
 		Session::put('success', 'Je bericht werd geplaatst');
 
 		return view('home', compact('posts'));
+	}
+	public function delete(Post $post)
+	{
+		$this->posts->delete($post);
+
+		Session::put('success', 'Bericht verwijderd.');
+
+		return redirect()->back();
 	}
 }

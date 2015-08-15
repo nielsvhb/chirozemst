@@ -63,9 +63,13 @@
 			<div class="row">
 				<div class="col s12">
 					<div class="card teal darken-1">
-						<div class="card-content white-text">
+						<div class="card-content white-text hover_class">
 							<span class="card-title">{{ $post->title }}</span>
 							<p>{{ $post->content }}</p>
+
+								@if(Auth::check())
+									<a href="{{ route('post.delete', $post->id) }}"><i class="material-icons post-delete">delete</i></a>
+								@endif
 						</div>
 						<div class="card-action">
 							<a href="">Geplaatst door {{ $post->author }}.</a>

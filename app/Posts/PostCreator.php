@@ -14,6 +14,7 @@ class PostCreator
 	public function create($data)
 	{
 		$post = $this->posts->make();
+
 		$post->title = $data['title'];
 		$post->content = $data['content'];
 		$post->author = Auth::user()->getFullName();

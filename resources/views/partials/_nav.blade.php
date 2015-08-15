@@ -4,7 +4,7 @@
 			<div class="col s10 offset-s1">
 				<div class="nav-wrapper">
 					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<a href="{{ route('home') }}" class="brand-logo">
+					<a href="{{ route('home') }}" class="brand-logo hide-on-med-and-down">
 						<img src="{{ asset('images/logo.png') }}" width="40px" height="48px" class="logo">   Chiro Tijl Zemst
 					</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -14,7 +14,7 @@
 						<li><a href="{{ route('contact') }}">Contact</a></li>
 						<li class="divider"></li>
 
-						@if (\Illuminate\Support\Facades\Auth::check())
+						@if (Auth::check())
 							<li>
 								<a class="dropdown-button" href="#" data-activates="dropdown1">
 									{{ Auth::user()->getFullName() }}<i class="material-icons right">arrow_drop_down</i>

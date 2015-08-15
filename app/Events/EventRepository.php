@@ -11,7 +11,5 @@ interface EventRepository
 
 	public function findAllByDate();
 
-	public function deleteById($id);
-
 	public function delete($course);
 }

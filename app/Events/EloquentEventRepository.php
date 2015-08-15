@@ -3,7 +3,7 @@ namespace App\Events;
 
 class EloquentEventRepository implements EventRepository
 {
-	public $model;
+	private $model;
 
 	/**
 	 * @param \App\Events\Event $model
@@ -39,14 +39,9 @@ class EloquentEventRepository implements EventRepository
 		return $this->model->where('date','!=', 'null')->orderBy('date', 'asc')->get();
 	}
 
-	public function deleteById($id)
+	public function delete($event)
 	{
-		$this->model->destroy($id);
-	}
-
-	public function delete($course)
-	{
-		$this->deleteById($course->id);
+		$this->model->destroy($event->id);
 	}
 
 }

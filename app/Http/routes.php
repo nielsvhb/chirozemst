@@ -10,6 +10,16 @@ Route::bind('event', function ($value) {
 	return $event;
 });
 
+Route::bind('post', function ($value) {
+	$post = app('App\Posts\PostRepository')->find($value);
+
+	if (! $post) {
+		throw new \Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+	}
+
+	return $post;
+});
+
 //Basic routes
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@home']);
 Route::get('info', ['as' => 'info', 'uses' => 'HomeController@info']);
@@ -27,5 +37,10 @@ Route::get('logout', ['as' => 'logout', 'uses' => 'LoginController@logout']);
 Route::post('kalender', ['as' => 'kalender', 'uses' => 'CalendarController@create']);
 Route::get('kalender/{event}', ['as' => 'event.delete', 'uses' => 'CalendarController@delete']);
 
-//Home post routes
-Route::post('/', ['as' => 'home', 'uses' => 'HomeController@create']);
+//Home post route
+Route::post('/nieuws', ['as' => 'home', 'uses' => 'HomeController@create']);
+Route::get('nieuws/{post}', ['as' => 'post.delete', 'uses' => 'HomeController@delete']);
+
+
+//If user refreshes page
+Route::get('/nieuws', ['as' => 'home', 'uses' => 'HomeController@home']);

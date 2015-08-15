@@ -15,7 +15,7 @@ class LoginController extends Controller
 
 			Session::put('success', 'U bent ingelogd.');
 
-			return redirect()->route('home');
+			return redirect()->home();
 
 		}
 
