@@ -19,7 +19,7 @@
 	<div class="footer-copyright">
 		<div class="container">
 			© 2015 Chiro Tijl Zemst | Niels Vanhorenbeeck
-			<a class="grey-text text-lighten-4 right" href="#!">Contact</a>
+			<a class="grey-text text-lighten-4 right" href="https://www.facebook.com/pages/Chiro-Tijl-Zemst/943575389037822">Facebook</a>
 		</div>
 	</div>
 </footer>
