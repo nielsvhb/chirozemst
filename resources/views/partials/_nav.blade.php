@@ -29,10 +29,11 @@
 					<!-- Mobile Navigation Starts Here -->
 
 					<ul class="side-nav" id="mobile-demo">
-						<li><a href="">Info</a></li>
-						<li><a href="">Afdelingen</a></li>
+						<li><a href="{{ route('home') }}">Home</a></li>
+						<li><a href="{{ route('info') }}">Info</a></li>
+						<li><a href="{{ route('afdelingen') }}">Afdelingen</a></li>
 						<li><a href="{{ route('kalender') }}">Kalender</a></li>
-						<li><a href="">Contact</a></li>
+						<li><a href="{{ route('contact') }}">Contact</a></li>
 						<li><a class="modal-trigger" href="#modal1">Login</a></li>
 					</ul>
 

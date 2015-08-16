@@ -45,17 +45,17 @@
 	{!! Form::open(['route' => 'home', 'id' => 'home-post']) !!}
 
 		<div class="input-field col s12">
-			{!! Form::text('title', null, ['required' => 'required', 'class' => 'validate', 'id' => 'title']) !!}
+			{!! Form::text('title', null, ['class' => '', 'id' => 'title']) !!}
 			{!! Form::label('title', 'Titel') !!}
 		</div>
 
 		<div class="input-field col s12">
-			<textarea id="content" class="materialize-textarea" required name="content"></textarea>
-			{!! Form::label('content', 'Inhoud', ['class' => 'validate']) !!}
+			<textarea id="content" class="materialize-textarea"  name="content"></textarea>
+			{!! Form::label('content', 'Inhoud', ['class' => '']) !!}
 		</div>
 
-		<div class="col s4 offset-s4">
-			<a class="waves-effect waves-light btn post-button" onclick="document.getElementById('home-post').submit();"><i class="material-icons left">done</i>Plaats bericht</a>
+		<div class="col l4 offset-l4 s12 m12">
+			<a class="waves-effect waves-light btn post-button blue-grey" onclick="document.getElementById('home-post').submit();"><i class="material-icons left">done</i>Plaats bericht</a>
 		</div>
 
 	{!! Form::close() !!}
@@ -69,7 +69,7 @@
 		@foreach($posts as $post)
 			<div class="row">
 				<div class="col s12">
-					<div class="card teal darken-1">
+					<div class="card blue-grey">
 						<div class="card-content white-text hover_class">
 							<span class="card-title">{{ $post->title }}</span>
 							<p>{{ $post->content }}</p>
