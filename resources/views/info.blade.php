@@ -16,7 +16,7 @@
 
 		<h3>Veel gestelde vragen</h3>
 
-		<div class="card lime lighten-3">
+		<div class="card lime lighten-4">
 			<div class="card-content grey-text text-darken-3">
 				<span class="card-title grey-text text-darken-3">In welke groep kom je terecht?</span>
 				<p>Chiro Tijl Zemst is een chiro voor zowel jongens als meisjes, maar de groepen zijn wel niet gemengd.<br>
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 
-		<div class="card lime lighten-3">
+		<div class="card lime lighten-4">
 			<div class="card-content grey-text text-darken-3">
 				<span class="card-title grey-text text-darken-3">Wat is de Chiro en hoe lang duurt een Chirozondag?</span>
 				<p>Onze Chiro begint elke zondag om 14u15 met de opening, een samenkomst met heel de Chiro waarin
@@ -42,7 +42,7 @@
 			</div>
 		</div>
 
-		<div class="card lime lighten-3">
+		<div class="card lime lighten-4">
 			<div class="card-content grey-text text-darken-3">
 				<span class="card-title grey-text text-darken-3">Wat kost de Chiro en hoe kan ik mij inschrijven?</span>
 				<p>Voor een jaar spelplezier in de Chiro, betaal je € 35. Hiermee wordt uw kind ook meteen
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 
-		<div class="card lime lighten-3">
+		<div class="card lime lighten-4">
 			<div class="card-content grey-text text-darken-3">
 				<span class="card-title grey-text text-darken-3">Waar zijn de lokalen van Chiro Tijl Zemst gelegen?</span>
 				<p>De Hemen, want zo heten onze lokalen: Stationslaan 61, 1980 Zemst
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 
-		<div class="card lime lighten-3">
+		<div class="card lime lighten-4">
 			<div class="card-content grey-text text-darken-3">
 				<span class="card-title grey-text text-darken-3">Heeft Chiro Tijl Zemst een uniform?</span>
 				<p>Qua kledij, hebben wij als Chiro natuurlijk een uniform.
@@ -74,7 +74,7 @@
 			</div>
 		</div>
 
-		<div class="card lime lighten-3">
+		<div class="card lime lighten-4">
 			<div class="card-content grey-text text-darken-3">
 				<span class="card-title grey-text text-darken-3">Moet je iets speciaals meenemen?</span>
 				<p>Rond 16u00, houden alle groepen traditiegewijs het “vieruurtje”.
@@ -88,7 +88,7 @@
 			</div>
 		</div>
 
-		<div class="card lime lighten-3">
+		<div class="card lime lighten-4">
 			<div class="card-content grey-text text-darken-3">
 				<span class="card-title grey-text text-darken-3">Moet je een aantal keren “verplicht” komen?</span>
 				<p>Naar de Chiro, kom je als je kan en wil! Er zijn dus geen verplichte zondagen

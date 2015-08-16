@@ -73,12 +73,12 @@
 
 			<div class="row">
 				<input type="submit" class="btn" value="Login">
+				<div class="modal-footer">
+					<a href="{{ route('register.show') }}" class="modal-action modal-close waves-effect waves-green btn-flat ">Nog geen account?</a>
+				</div>
 			</div>
 		</form>
 
 	</div>
 
-	<div class="modal-footer">
-		<a href="{{ route('register.show') }}" class="modal-action modal-close waves-effect waves-green btn-flat ">Nog geen account?</a>
-	</div>
 </div>

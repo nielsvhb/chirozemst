@@ -8,10 +8,11 @@
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text">Links</h5>
 				<ul>
-					<li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-					<li><a class="grey-text text-lighten-3" href="#!">Info</a></li>
-					<li><a class="grey-text text-lighten-3" href="#!">Afdelingen</a></li>
-					<li><a class="grey-text text-lighten-3" href="#!">Kalender</a></li>
+					<li><a class="grey-text text-lighten-3" href="{{ route('home') }}">Home</a></li>
+					<li><a class="grey-text text-lighten-3" href="{{ route('info') }}">Info</a></li>
+					<li><a class="grey-text text-lighten-3" href="{{ route('afdelingen') }}">Afdelingen</a></li>
+					<li><a class="grey-text text-lighten-3" href="{{ route('kalender') }}">Kalender</a></li>
+					<li><a class="grey-text text-lighten-3" href="{{ route('contact') }}">Contact</a></li>
 				</ul>
 			</div>
 		</div>

@@ -24,6 +24,13 @@
 				<h5 class="light grey-text text-lighten-3">er zijn voor elkaar</h5>
 			</div>
 		</li>
+		<li>
+			<img src="{{ asset('images/slider4.jpg') }}">
+			<div class="caption center-align shadow">
+				<h3>Chiro is...</h3>
+				<h5 class="light grey-text text-lighten-3">samen iets opbouwen</h5>
+			</div>
+		</li>
 	</ul>
 </div>
 <div class="row">

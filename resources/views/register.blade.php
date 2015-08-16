@@ -33,6 +33,13 @@
 			</div>
 
 			<div class="row">
+				<div class="input-field col s6">
+					<input type="text" id="access-code" name="access-code" class="validate">
+					<label for="access-code">Toegangscode</label>
+				</div>
+			</div>
+
+			<div class="row">
 				<input type="submit" class="btn" value="Aanmelden">
 			</div>
 		</form>
