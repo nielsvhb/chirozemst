@@ -10,31 +10,37 @@
 
 			<div class="row">
 				<div class="input-field col s6">
-					<input id="first_name" type="text" class="validate" name="first_name">
+					<input id="first_name" type="text" class="validate" name="first_name" required>
 					<label for="first_name">Voornaam</label>
 				</div>
 
 				<div class="input-field col s6">
-					<input id="last_name" type="text" class="validate" name="last_name">
+					<input id="last_name" type="text" class="validate" name="last_name" required>
 					<label for="last_name">Familienaam</label>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="input-field col s6">
-					<input id="email" type="email" class="validate" name="email">
+					<input id="email" type="email" class="validate" name="email" required>
 					<label for="email">Email</label>
+					@if ($errors->has('email'))
+						{{ $errors->first('email') }}
+					@endif
 				</div>
 
 				<div class="input-field col s6">
-					<input id="password" type="password" class="validate" name="password">
+					<input id="password" type="password" class="validate" name="password" required>
 					<label for="password">Password</label>
+					@if ($errors->has('password'))
+						{{ $errors->first('password') }}
+					@endif
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="input-field col s6">
-					<input type="text" id="access-code" name="access-code" class="validate">
+					<input type="text" id="access-code" name="access-code" class="validate" required>
 					<label for="access-code">Toegangscode</label>
 				</div>
 			</div>

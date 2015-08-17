@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Users\UserCreator;
-use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 class RegisterController extends Controller
@@ -13,29 +13,22 @@ class RegisterController extends Controller
 		return view('register');
 	}
 
-	public function register(UserCreator $userCreator)
+	public function register(UserCreator $userCreator, Requests\RegisterRequest $request)
 	{
-		$data = Input::all();
+		$data = $request->all();
 
-		if (isset ($data['first_name']) && isset($data['last_name']) && isset ($data['password']) && isset($data['email']))
-		{
-			if ($data['access-code'] == "Langeplanken") {
-				$userCreator->create($data);
-				Session::put('success', 'Profiel werd aangemaakt.');
+		if ($data['access-code'] == "Langeplanken") {
+			$user = $userCreator->create($data);
+			Auth::login($user);
+			Session::put('success', 'Profiel werd aangemaakt.');
 
-				return redirect()->home();
+			return redirect()->home();
 
-			} else {
-				Session::put('error', 'De toegangscode is niet correct');
+		} else {
+			Session::put('error', 'De toegangscode is niet correct');
 
-				return redirect()->home();
-			}
+			return redirect()->home();
 		}
-		else {
-			Session::put('error', 'Gelieve alle velden in te vullen.');
 
-			return view('register');
-
-		}
 	}
 }

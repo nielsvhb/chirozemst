@@ -23,7 +23,7 @@
 				</div>
 				<div class="card-content">
 					<p>De reuzen zijn normaal gezien de speelclubbers. De kinderen van het derde en vierde leerjaar zitten
-					wij de Reuzen. Ook voor hen eindigt de Chiro om 18u.</p>
+					bij de Reuzen. Ook voor hen eindigt de Chiro om 18u.</p>
 				</div>
 			</div>
 		</div>
