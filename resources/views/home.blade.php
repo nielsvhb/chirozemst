@@ -4,7 +4,7 @@
 <div class="slider">
 	<ul class="slides">
 		<li>
-			<img src="{{ asset('images/slider1.jpg') }}">
+			<img src="{{ asset('images/slider1.JPG') }}">
 			<div class="caption left-align shadow">
 				<h3>Chiro is...</h3>
 				<h5 class="light grey-text text-lighten-3">samen op trektocht</h5>
